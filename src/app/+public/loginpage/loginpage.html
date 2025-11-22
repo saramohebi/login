@@ -1,1 +1,22 @@
-<p>loginpage works!</p>
+<section class="login">
+    <div>
+        <label for="username">نام کاربری </label>
+        <input [(ngModel)]="username" type="text" id="username" placeholder="نام کاربری ">
+    </div>
+   <div>
+        <label for="password">کلمه عبور </label>
+        <input [(ngModel)]="password" type="password" id="password" placeholder="کلمه عبور ">
+    </div>
+   <div>
+        <input [(ngModel)]="remember" type="checkbox" id="checkbox">
+        <label for="checkbox"> من را به خاطر بسپار</label>
+    </div>
+    <div>
+        <button [disabled]="username==''|| password=='' " (click)="check()">ورود </button>
+    </div>
+    @if (message!='') {
+    <div class="message">
+        {{message}}
+    </div>
+    }
+</section>
