@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-bgcolor:#02343f;
+$primary-color:#f0edcc;
 body{
     margin:0;
   direction: rtl;
@@ -11,4 +13,12 @@ body{
 }
 *{
     font-family: Yekanbakh;
+}
+.footer{
+     font-size: 14px;
+     padding: 0.3em;
+     margin-top: 270px;
+     text-align: center;
+     background-color: $primary-bgcolor;
+     color: $primary-color;
 }

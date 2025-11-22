@@ -1,0 +1,26 @@
+
+$primary-bgcolor:#97afac;
+$primary-color:#f0edcc;
+$hot-link:#33656aec;
+div {
+    background-color: $primary-bgcolor;
+    border-radius: 0.9em;
+    padding: 0.3em;
+    padding-right: 1rem;
+    margin: 0.8em;
+    text-align:right ;
+    color: #fffdec;
+    display: flex;
+    height: 100%;
+    width: 30em;
+    gap: 20px 20px;
+}
+.box:hover{
+    cursor: pointer;
+        background-color: $hot-link;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2{
+    margin-right: 1rem
+}

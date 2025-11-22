@@ -33,9 +33,8 @@ export const routes: Routes = [
         {path:'example',component:Examplepage},
         {path:'messages',component:Messageboxpage},
         {path:'',redirectTo:'dashboard',pathMatch:'full'},
-        {path:'**',redirectTo:'/error',pathMatch:'full'},
+        {path:'**',redirectTo:'dashboard',pathMatch:'full'},
     ]},
-    {path:'error',component:Aboutmepage},
     {path:'',redirectTo:'public',pathMatch:'full'},
     {path:'**',redirectTo:'public'}
 ];

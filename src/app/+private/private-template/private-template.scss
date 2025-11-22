@@ -2,7 +2,7 @@
 
 $primary-bgcolor:#02343f;
 $primary-color:#f0edcc;
-$hot-link:#f0edcc95;
+$hot-link:#97afac;
 .banner{
     background-color: $primary-bgcolor;
     color: $primary-color;
@@ -27,8 +27,12 @@ $hot-link:#f0edcc95;
     text-align: center;
     border-radius: 0.3em;
     }
-    .divider{
+  .divider{
         flex: 1 1 auto;
+    }
+    a:hover{
+        background-color: $hot-link;
+        color: aliceblue;
     }
 
 }
