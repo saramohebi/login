@@ -15,7 +15,6 @@ import { Examplepage } from './+private/examplepage/examplepage';
 import { Messageboxpage } from './+private/messageboxpage/messageboxpage';
 
 export const routes: Routes = [
-    
     {path:'public',component:PublicTemplate,children:[
         {path:'aboutme',component:Aboutmepage},
         {path:'education',component:Educationpage},
