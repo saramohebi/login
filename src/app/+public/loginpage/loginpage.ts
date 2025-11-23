@@ -16,8 +16,14 @@ router=inject(Router);
 message:string='';
 check(){
   if (this.username=='admin' && this.password=='admin') {
-     this.router.navigateByUrl('/privatetemplate');
+     this.router.navigateByUrl('private');
   } else {
+    this.message='نام کاربری یا کلمه عبور صحیح نمیباشد!';
+
+  }
+  if (this.username=='user' && this.password=='user'){
+     this.router.navigateByUrl('public');
+  }else {
     this.message='نام کاربری یا کلمه عبور صحیح نمیباشد!';
 
   }
