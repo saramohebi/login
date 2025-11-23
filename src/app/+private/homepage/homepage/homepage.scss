@@ -1,0 +1,64 @@
+
+$primary-bgcolor:#02343f;
+$primary-color:#f0edcc;
+$hot-link:#97afac;
+.banner{
+    background-color: $primary-bgcolor;
+    color: $primary-color;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    padding: 1.5em;
+
+}
+.menu{
+    background-color: #02343f7b;
+    display: flex;
+    gap: 0.3em;
+    padding: 0.3em;
+    a{
+     background-color: $primary-bgcolor;
+    color: $primary-color;
+    text-decoration: none;
+    padding: 0.4em;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 0.3em;
+    }
+    .divider{
+        flex: 1 1 auto;
+    }
+    a:hover{
+        background-color: $hot-link;
+        color: aliceblue;
+    }
+    
+}
+
+
+$primary-bgcolor:#97afac;
+$primary-color:#f0edcc;
+$hot-link:#33656aec;
+div {
+    background-color: $primary-bgcolor;
+    border-radius: 0.9em;
+    padding: 0.3em;
+    padding-right: 1rem;
+    margin: 0.8em;
+    text-align:right ;
+    color: #fffdec;
+    display: flex;
+    height: 100%;
+    width: 30em;
+    gap: 20px 20px;
+}
+.box:hover{
+    cursor: pointer;
+        background-color: $hot-link;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2{
+    margin-right: 1rem
+}
