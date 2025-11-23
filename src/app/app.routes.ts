@@ -13,8 +13,14 @@ import { Dashboard } from './+private/dashboard/dashboard';
 import { Resumemanagementpage } from './+private/resumemanagementpage/resumemanagementpage';
 import { Examplepage } from './+private/examplepage/examplepage';
 import { Messageboxpage } from './+private/messageboxpage/messageboxpage';
+import { Homepage } from './+private/homepage/homepage/homepage';
 
 export const routes: Routes = [
+    {path:'home',component:Homepage,children:[
+        {path:'login',component:Loginpage},
+        {path:'',redirectTo:'home',pathMatch:'full'},
+        {path:'**',redirectTo:'home'},
+    ]},
     {path:'public',component:PublicTemplate,children:[
         {path:'aboutme',component:Aboutmepage},
         {path:'education',component:Educationpage},
@@ -24,17 +30,17 @@ export const routes: Routes = [
         {path:'officials',component:Officialspage},
         {path:'login',component:Loginpage},
         {path:'contactus',component:Contactpage},
-        {path:'',redirectTo:'aboutme',pathMatch:'full'},
-        {path:'**',redirectTo:'aboutme'},
+        {path:'',redirectTo:'home',pathMatch:'full'},
+        {path:'**',redirectTo:'home'},
     ]},
     {path:'private',component:PrivateTemplate,children:[
         {path:'dashboard',component:Dashboard},
         {path:'resumemanagement',component:Resumemanagementpage},
         {path:'example',component:Examplepage},
         {path:'messages',component:Messageboxpage},
-        {path:'',redirectTo:'dashboard',pathMatch:'full'},
-        {path:'**',redirectTo:'dashboard',pathMatch:'full'},
+        {path:'',redirectTo:'home',pathMatch:'full'},
+        {path:'**',redirectTo:'home',pathMatch:'full'},
     ]},
-    {path:'',redirectTo:'public',pathMatch:'full'},
-    {path:'**',redirectTo:'public'}
+    {path:'',redirectTo:'home',pathMatch:'full'},
+    {path:'**',redirectTo:'home'}
 ];
