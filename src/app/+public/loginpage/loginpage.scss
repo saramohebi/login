@@ -27,6 +27,9 @@ $primary-bgcolor:#02343f;
         outline-color: $primary-bgcolor;
     }
     }
+    label:not(:last-child){
+        display: block;
+    }
     button{
         width: 100%;
         background-color: $primary-bgcolor;
@@ -34,9 +37,16 @@ $primary-bgcolor:#02343f;
         padding: 0.4em;
         border: none;
         border-radius: 0.3em;
-    button[disabled]{
-        background-color: #bababa;
     }
+    button[disabled]{
+        background-color:  silver;
+        color: black;
+    }
+    button[disabled]:hover{
+        cursor: not-allowed;
+    }
+    button:hover{
+        cursor: pointer;
     }
      .message{
         background-color: rgb(250, 189, 193);
