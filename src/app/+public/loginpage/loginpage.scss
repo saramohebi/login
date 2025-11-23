@@ -26,6 +26,7 @@ $primary-bgcolor:#02343f;
     input:focus{
         outline-color: $primary-bgcolor;
     }
+
     }
     label:not(:last-child){
         display: block;
@@ -50,10 +51,17 @@ $primary-bgcolor:#02343f;
     }
      .message{
         background-color: rgb(250, 189, 193);
-        color: $primary-bgcolor;
+        color: #36362f;
         font-size: small;
         padding: 0.4em;
         border-radius: 0.3em;
         text-align: center;
      }
+}
+.problem{
+    border-color: rgb(250, 189, 193) ;
+}
+.subtitle{
+    font-size: small;
+    color: gray;
 }
