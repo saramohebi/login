@@ -1,11 +1,23 @@
 <section class="login">
     <div>
         <label for="username">نام کاربری </label>
-        <input [(ngModel)]="username" type="text" id="username" placeholder="نام کاربری ">
+        <input #un="ngModel" [class.problem]="username==''" [(ngModel)]="username" type="text" id="username" placeholder="نام کاربری ">
+        @if(un.touched && username==''){
+            <label class="subtitle">الزامی است</label>
+        }
     </div>
    <div>
         <label for="password">کلمه عبور </label>
-        <input [(ngModel)]="password" type="password" id="password" placeholder="کلمه عبور ">
+        <input #un="ngModel" [class.problem]="password==''" [(ngModel)]="password" type="password" id="password" placeholder="کلمه عبور ">
+          @if(un.touched && password==''){
+            <label class="subtitle">الزامی است</label>
+        }
+           @if(un.touched && password==''){
+            🐵
+        }
+        @else{
+            🙈
+        }
     </div>
    <div>
         <input [(ngModel)]="remember" type="checkbox" id="checkbox">
